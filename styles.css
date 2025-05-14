@@ -1,0 +1,223 @@
+/* General Body */
+body {
+    background-color: #f8f8f8; /* Light grey background for the body */
+    font-family: 'Arial', sans-serif; /* Font style for the whole page */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+}
+
+/* Header Styling */
+header {
+    background-color: #8B0000; /* Dark red background for the header */
+    padding: 20px 0; /* Padding for top and bottom */
+    text-align: center; /* Center align the content in the header */
+    position: relative; /* Positioning for logo and title */
+}
+
+.logo-container {
+    display: flex; /* Use flexbox for centering */
+    justify-content: center; /* Center the logo and title horizontally */
+    align-items: center; /* Center the logo and title vertically */
+    gap: 20px; /* Space between logo and title */
+    flex-wrap: wrap; /* Allow elements to wrap if necessary */
+}
+
+.logo {
+    width: 120px; /* Width of the logo */
+    height: auto; /* Maintain aspect ratio of the logo */
+}
+
+h1 {
+    font-size: 3em; /* Set a large font size for the header */
+    color: white; /* White text color for the title */
+    margin: 0; /* Remove default margin */
+}
+
+/* Navbar (Menu) Styling */
+.navbar {
+    background-color: #333; /* Dark background for the navbar */
+    padding: 10px 0; /* Padding for top and bottom of navbar */
+    margin: 0; /* Remove default margin */
+}
+
+.navbar ul {
+    list-style: none; /* Remove bullet points from the list */
+    padding: 0; /* Remove padding */
+    text-align: center; /* Center the navbar links */
+    margin: 0; /* Remove default margin */
+}
+
+.navbar li {
+    display: inline-block; /* Display menu items in a row */
+    margin: 0 20px; /* Space between menu items */
+}
+
+.navbar a {
+    text-decoration: none; /* Remove underline from links */
+    color: white; /* White text color */
+    font-size: 1.2em; /* Set font size */
+    padding: 10px 20px; /* Add padding around the text */
+    border-radius: 5px; /* Rounded corners for the links */
+    display: inline-block; /* Ensure the link is block-level for padding */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition on hover */
+}
+
+/* Styling for the navigation icons */
+.nav-icon {
+    width: 30px;  /* Increased size of the icons */
+    height: 30px; /* Increased size of the icons */
+    margin-right: 10px;  /* Space between icon and text */
+    vertical-align: middle; /* Align the icon with the text */
+    background-color: transparent; /* Set transparent background */
+    padding: 5px; /* padding around the icon */
+    border-radius: 50%; /* rounded background */
+}
+
+/* Additional Styling for SVG icons (hover effect) */
+.navbar a:hover .nav-icon {
+    background-color: rgba(255, 255, 255, 0.3); /* Light background effect on hover */
+    border-radius: 50%; /* Make the background rounded on hover */
+}
+
+/* Main Content Section */
+main {
+    max-width: 1000px; /* Limit the width of the content */
+    margin: 20px auto; /* Center the content and add margin on top and bottom */
+    padding: 20px; /* Add padding inside the main section */
+    background: #f0e6d2; /* Light beige background color */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Light shadow around the content */
+}
+
+/* Footer */
+footer {
+    background-color: #8B0000; /* Dark red background for the footer */
+    color: white; /* White text color */
+    text-align: center; /* Center the footer text */
+    padding: 15px; /* Padding inside the footer */
+    font-size: 1.1em; /* Font size for footer text */
+    margin-top: 30px; /* Margin on top of the footer */
+}
+
+/* Carousel Section */
+.carousel-container {
+    position: relative; /* Positioning for the carousel */
+    width: 100%; /* Full width of the container */
+    max-width: 800px; /* Limit the max width of the carousel */
+    margin: 0 auto; /* Center the carousel horizontally */
+}
+
+.carousel-image {
+    width: 100%; /* Make the image responsive */
+    height: auto; /* Maintain aspect ratio of the image */
+    border-radius: 10px; /* Rounded corners for the image */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); /* Light shadow around the image */
+}
+
+.carousel-buttons {
+    position: absolute; /* Positioning the buttons on the carousel */
+    top: 50%; /* Center buttons vertically */
+    width: 100%; /* Full width of the container */
+    display: flex; /* Use flexbox to align buttons */
+    justify-content: space-between; /* Space out the buttons on both sides */
+    transform: translateY(-50%); /* Vertically center the buttons */
+}
+
+button {
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background for the buttons */
+    color: white; /* White text color */
+    border: none; /* Remove border */
+    padding: 15px; /* Padding inside the button */
+    font-size: 18px; /* Font size for the button */
+    border-radius: 5px; /* Rounded corners for the button */
+    cursor: pointer; /* Change the cursor to a pointer */
+    transition: background-color 0.3s ease; /* Smooth background transition on hover */
+}
+
+button:hover {
+    background-color: rgba(0, 0, 0, 0.8); /* Darken the button on hover */
+}
+
+/* Image Styling */
+.place-img, .about-img {
+    width: 100% !important; /* Full width of the images */
+    height: auto !important; /* Maintain aspect ratio */
+    max-width: 500px !important; /* Limit the width to 500px */
+    margin-top: 15px !important; /* Margin on top */
+    margin-bottom: 15px !important; /* Margin on bottom */
+    border-radius: 10px !important; /* Rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1) !important; /* Light shadow around the images */
+    display: block !important; /* Make the image a block element */
+    margin-left: auto !important; /* Center the image horizontally */
+    margin-right: auto !important; /* Center the image horizontally */
+}
+
+/* Video Styling */
+.video-container {
+    text-align: center; /* Center align the video */
+    margin: 20px 0; /* Margin on top and bottom */
+    padding: 0; /* Remove padding */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); /* Light shadow around the video container */
+    max-width: 100%; /* Ensure the container doesn't exceed 100% of the available width */
+}
+
+.video-container iframe {
+    width: 100%; /* Make the video responsive */
+    height: 315px; /* Set fixed height for the video */
+    border: none; /* Remove border */
+    border-radius: 8px; /* Rounded corners for the video */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15); /* Light shadow around the iframe */
+}
+
+/* Table Styling */
+table {
+    width: 100%; /* Full width of the table */
+    border-collapse: collapse; /* Collapse table borders */
+    margin-top: 20px; /* Margin on top of the table */
+}
+
+th, td {
+    padding: 15px; /* Padding inside table cells */
+    text-align: left; /* Align text to the left */
+    border-bottom: 1px solid #ddd; /* Light border below each row */
+}
+
+th {
+    background-color: #8B0000; /* Dark red background for table headers */
+    color: white; /* White text color for table headers */
+}
+
+tr:hover {
+    background-color: #f2f2f2; /* Light background on hover */
+}
+
+/* Scroll to Top Button */
+#scrollToTopButton {
+    display: none; /* Initially hidden */
+    position: fixed; /* Fixed position for the button */
+    bottom: 20px; /* Position at the bottom of the page */
+    right: 20px; /* Position to the right of the page */
+    background-color: #8B0000; /* Dark red background */
+    color: white; /* White text color */
+    border: none; /* No border for the button */
+    padding: 15px; /* Padding inside the button */
+    font-size: 18px; /* Font size */
+    border-radius: 5px; /* Rounded corners for the button */
+}
+
+/* Makes the image smaller on smaller screens */
+@media (max-width: 768px) {
+    .place-img {
+        max-width: 100% !important; /* Ensure images scale on small screens */
+        height: auto !important; /* Maintain aspect ratio */
+    }
+
+    .carousel-container {
+        max-width: 100%; /* Ensure carousel container doesn't overflow */
+    }
+
+    .video-container iframe {
+        height: 250px; /* Reduce video height for smaller screens */
+    }
+}

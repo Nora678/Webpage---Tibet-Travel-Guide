@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Character encoding and viewport settings for responsiveness -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Linking external CSS file for styles -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Linking external JavaScript file for additional functionality -->
+    <script src="myScript.js" defer></script>
+    
+    <!-- Title of the page that appears in the browser tab -->
+    <title>Places to Visit in Tibet</title>
+</head>
+<body>
+
+    <!-- Header Section: Includes the logo and page title -->
+    <header class="header-places">
+        <div class="logo-container">
+            <!-- Logo Image with alt text for accessibility -->
+            <img src="logo.svg" alt="Tibet Travel Guide Logo" class="logo">
+            <!-- Page Title -->
+            <h1 class="darkred-text">Places to Visit</h1>
+        </div>
+    </header>
+
+    <!-- Navigation Menu Section -->
+    <nav class="navbar">
+        <ul>
+            <!-- Navigation links with icons -->
+            <li><a href="index.html"><img src="homepage-icon.svg" alt="Home Icon" class="nav-icon">Home</a></li>
+            <li><a href="about.html"><img src="about-icon.svg" alt="About Icon" class="nav-icon">About Tibet</a></li>
+            <li><a href="places.html"><img src="places-icon.svg" alt="Places Icon" class="nav-icon">Places to Visit</a></li>
+            <li><a href="festivals.html"><img src="festivals-icon.svg" alt="Festivals Icon" class="nav-icon">Festivals</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content Section -->
+    <main>
+        <!-- Introduction Section for Places to Visit: Provides a brief intro -->
+        <section class="places">
+            <h2>Top Places to Visit in Tibet</h2>
+            <!-- A short introduction describing the key features of Tibet's landscape -->
+            <p>Tibet is known for its stunning landscapes, historical landmarks, and spiritual destinations. Here are some of the must-see places when traveling to this beautiful region:</p>
+        </section>
+
+        <!-- Top Attractions Section: List of famous places to visit in Tibet -->
+        <section class="locations">
+            <h3>Famous Attractions in Tibet</h3>
+            <!-- Unordered list of top attractions with descriptions and images -->
+            <ul>
+                <li>
+                    <!-- Potala Palace: Iconic symbol of Tibetan Buddhism -->
+                    <h4>🏯 Potala Palace</h4>
+                    <p>The Potala Palace, once the winter residence of the Dalai Lama, is an iconic symbol of Tibetan Buddhism and a UNESCO World Heritage Site.</p>
+                    <img src="potala_palace.jpg" alt="Potala Palace" class="place-img">
+                </li>
+                <li>
+                    <!-- Jokhang Temple: Spiritual center of Tibetan Buddhism -->
+                    <h4>🙏 Jokhang Temple</h4>
+                    <p>Located in Lhasa, Jokhang Temple is considered the spiritual heart of Tibet. It is one of the most sacred places for Tibetan Buddhists.</p>
+                    <img src="jokhang_temple.jpg" alt="Jokhang Temple" class="place-img">
+                </li>
+                <li>
+                    <!-- Mount Everest: The world’s highest peak -->
+                    <h4>⛰️ Mount Everest (Tibet Side)</h4>
+                    <p>The Tibetan side of Mount Everest offers stunning views of the world's highest peak, with the base camp being a popular destination for adventurers and trekkers.</p>
+                    <img src="mount_everest.jpg" alt="Mount Everest" class="place-img">
+                </li>
+                <li>
+                    <!-- Yamdrok Lake: A sacred and beautiful lake in Tibet -->
+                    <h4>💙 Yamdrok Lake</h4>
+                    <p>Yamdrok Lake is one of Tibet's most beautiful and sacred lakes, known for its stunning turquoise waters and surrounding mountains.</p>
+                    <img src="yambrok_lake.jpg" alt="Yamdrok Lake" class="place-img">
+                </li>
+            </ul>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <!-- Footer text with copyright information -->
+        <p>&copy; 2025 Tibet Travel Guide. All rights reserved.</p>
+    </footer>
+
+    <!-- Scroll to Top Button Section: Button to scroll back to the top of the page -->
+    <button id="scrollToTopButton" onclick="scrollToTop()" style="display:none; position:fixed; bottom:20px; right:20px; background-color: #8B0000; color:white; border:none; padding:15px; font-size: 18px; border-radius: 5px;">
+        ↑ Top
+    </button>
+
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Character encoding and viewport settings for responsiveness -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Linking external CSS file for styles -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Linking external JavaScript file for additional functionality -->
+    <script src="myScript.js" defer></script>
+    
+    <!-- Title of the page that appears in the browser tab -->
+    <title>About Tibet</title>
+</head>
+<body>
+
+    <!-- Header Section: Includes the logo and page title -->
+    <header class="header-about">
+        <div class="logo-container">
+            <!-- Logo Image with alt text for accessibility -->
+            <img src="logo.svg" alt="Tibet Travel Guide Logo" class="logo">
+            <!-- Page Title -->
+            <h1 class="darkred-text">About Tibet</h1>
+        </div>
+    </header>
+
+    <!-- Navigation Menu Section -->
+    <nav class="navbar">
+        <ul>
+            <!-- Navigation links with icons -->
+            <li><a href="index.html"><img src="homepage-icon.svg" alt="Home Icon" class="nav-icon">Home</a></li>
+            <li><a href="about.html"><img src="about-icon.svg" alt="About Icon" class="nav-icon">About Tibet</a></li>
+            <li><a href="places.html"><img src="places-icon.svg" alt="Places Icon" class="nav-icon">Places to Visit</a></li>
+            <li><a href="festivals.html"><img src="festivals-icon.svg" alt="Festivals Icon" class="nav-icon">Festivals</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content Section -->
+    <main>
+        <!-- About Tibet Section: Provides an introduction to Tibet -->
+        <section class="about">
+            <h2>Tibet: The Roof of the World</h2>
+            <!-- Short description about Tibet's geography, culture, and spirituality -->
+            <p>Tibet, often called the "Roof of the World," is a region known for its high-altitude landscapes, rich history, and deep spiritual traditions. It is one of the most intriguing places on Earth, attracting travelers seeking adventure, spirituality, and breathtaking natural beauty.</p>
+            
+            <!-- Map Image showing the location of Tibet -->
+            <img src="tibet-map.png" alt="Map of Tibet" class="about-img">
+        </section>
+
+        <!-- Brief History of Tibet Section: Timeline of significant events in Tibet -->
+        <section>
+            <h3>Brief History of Tibet</h3>
+            <!-- Introduction to the history section -->
+            <p>Tibet's history spans thousands of years, shaped by Buddhism, monarchy, and cultural evolution. Here are some key historical moments:</p>
+            
+            <!-- Ordered List of key historical moments in Tibet -->
+            <ol>
+                <li>
+                    <!-- 7th Century: Tibetan Empire and Introduction of Buddhism -->
+                    <h4>🏰 7th Century: Tibetan Empire and the Introduction of Buddhism</h4>
+                    <p>King Songtsen Gampo established Tibet as a powerful kingdom and introduced Buddhism, which has since shaped its religious and cultural identity.</p>
+                </li>
+                <li>
+                    <!-- 13th Century: Influence of the Mongol Empire -->
+                    <h4>⚔️ 13th Century: Influence of the Mongol Empire</h4>
+                    <p>Tibet became a vassal of the Mongol Empire, which led to the integration of political and religious rule under the Dalai Lamas.</p>
+                </li>
+                <li>
+                    <!-- 17th Century: Dalai Lama Leadership -->
+                    <h4>🛕 17th Century: Dalai Lama Leadership Established</h4>
+                    <p>The 5th Dalai Lama centralized Tibet’s governance, establishing Lhasa as its religious and administrative capital.</p>
+                </li>
+                <li>
+                    <!-- 20th Century: Political Shifts and Modern Developments -->
+                    <h4>🌍 20th Century: Modern Developments and Political Changes</h4>
+                    <p>The 20th century brought political shifts, with Tibet experiencing significant changes in governance and cultural preservation.</p>
+                </li>
+            </ol>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <!-- Footer text with copyright information -->
+        <p>&copy; 2025 Tibet Travel Guide. All rights reserved.</p>
+    </footer>
+
+    <!-- Scroll to Top Button Section: Button to scroll back to the top of the page -->
+    <button id="scrollToTopButton" onclick="scrollToTop()" style="display:none; position:fixed; bottom:20px; right:20px; background-color: #8B0000; color:white; border:none; padding:15px; font-size: 18px; border-radius: 5px;">
+        ↑ Top
+    </button>
+
+</body>
+</html>

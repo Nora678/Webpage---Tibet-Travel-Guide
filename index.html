@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Character encoding and viewport settings for responsiveness -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Linking external CSS file for styles -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Linking external JavaScript file for additional functionality -->
+    <script src="myScript.js" defer></script>
+    
+    <!-- Title of the page that appears in the browser tab -->
+    <title>Tibet Travel Guide</title>
+</head>
+<body>
+
+    <!-- Header Section: Includes the logo and page title -->
+    <header class="header-index">
+        <div class="logo-container">
+            <!-- Logo Image with alt text for accessibility -->
+            <img src="logo.svg" alt="Tibet Travel Guide Logo" class="logo">
+            <!-- Main Title of the website -->
+            <h1 class="darkred-text">Tibet Travel Guide</h1>
+        </div>
+    </header>
+
+    <!-- Navigation Menu Section -->
+    <nav class="navbar">
+        <ul>
+            <!-- Navigation links with icons -->
+            <li><a href="index.html"><img src="homepage-icon.svg" alt="Home Icon" class="nav-icon">Home</a></li>
+            <li><a href="about.html"><img src="about-icon.svg" alt="About Icon" class="nav-icon">About Tibet</a></li>
+            <li><a href="places.html"><img src="places-icon.svg" alt="Places Icon" class="nav-icon">Places to Visit</a></li>
+            <li><a href="festivals.html"><img src="festivals-icon.svg" alt="Festivals Icon" class="nav-icon">Festivals</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content Section -->
+    <main>
+        <!-- Image Carousel Section -->
+        <section class="carousel">
+            <div class="carousel-container">
+                <!-- Carousel image for showcasing visuals of Tibet -->
+                <img id="carousel-image" src="index_header.jpg" alt="Tibet Image" class="carousel-image">
+                
+                <!-- Carousel Navigation Buttons -->
+                <div class="carousel-buttons">
+                    <!-- Left and right buttons to navigate through the carousel -->
+                    <button id="prevBtn" onclick="changeImage(-1)">&#10094;</button>
+                    <button id="nextBtn" onclick="changeImage(1)">&#10095;</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Welcome Hook Section: Short intro to the site -->
+        <section class="hook">
+            <!-- Heading for the welcome section -->
+            <h2>Welcome to Tibet Travel Guide!</h2>
+            <!-- Short description of what the site offers -->
+            <p>Explore the breathtaking landscapes, rich culture, and spiritual heritage of Tibet.</p>
+            
+            <!-- Image of Tibet's mountain landscape -->
+            <img src="tibet_mountains.jpg" alt="Mountains of Tibet" class="place-img">
+        </section>
+
+        <!-- Why Visit Tibet Section: Table displaying reasons to visit Tibet -->
+        <section>
+            <h3>Why Visit Tibet?</h3>
+            <!-- Table to display the reasons to visit Tibet and brief descriptions -->
+            <table>
+                <thead>
+                    <!-- Table header with two columns: Reason and Description -->
+                    <tr>
+                        <th>Reason</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Table rows with specific reasons to visit Tibet -->
+                    <tr>
+                        <td>🏔 Stunning Himalayan Scenery</td>
+                        <td>Marvel at the breathtaking peaks, including Mount Everest, and enjoy the peaceful beauty of the Tibetan Plateau.</td>
+                    </tr>
+                    <tr>
+                        <td>🕌 Ancient Buddhist Monasteries</td>
+                        <td>Visit spiritual landmarks like the Potala Palace and Jokhang Temple, which hold centuries of history.</td>
+                    </tr>
+                    <tr>
+                        <td>🎉 Unique Tibetan Culture and Festivals</td>
+                        <td>Experience vibrant celebrations like Losar (Tibetan New Year) and the Shoton Festival, showcasing traditional music, dance, and food.</td>
+                    </tr>
+                    <tr>
+                        <td>🙏 Spiritual Experiences and Pilgrimages</td>
+                        <td>Engage in deep spiritual journeys by exploring sacred sites like Mount Kailash, a major pilgrimage destination.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Embedded YouTube Video Section -->
+        <section class="video-container">
+            <!-- YouTube video embedded in an iframe for display -->
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/9oxYKr1htKw?si=yapPCvjwTH1VYiI3"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <!-- Footer text with copyright information -->
+        <p>&copy; 2025 Tibet Travel Guide. All rights reserved.</p>
+    </footer>
+
+    <!-- Scroll to Top Button Section -->
+    <button id="scrollToTopButton" onclick="scrollToTop()" style="display:none; position:fixed; bottom:20px; right:20px; background-color: #8B0000; color:white; border:none; padding:15px; font-size: 18px; border-radius: 5px;">
+        ↑ Top
+    </button>
+
+</body>
+</html>
