@@ -115,7 +115,6 @@ The **Tibet Travel Guide** is a website designed to educate and inform users abo
 - **Images:** Custom or royalty-free sources.
 - **Fonts:** Google Fonts (if applicable).
 - **JS Libraries:** None used — all scripts are custom.
-- **References:** Tutorials from [W3Schools](https://www.w3schools.com/) for interactive elements.
 
 ---
 
